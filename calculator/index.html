@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body id="body-part">
+
+      <div id="change-mode">
+        <label class="switch">
+          <input type="checkbox" value="On" id="onOff" onclick="changeMode();">
+          <span class="slider round" id="my-span"></span>
+        </label>
+      
+      </div>
+      
+      <div id="calculator-container">
+        <div id="inner-container">
+          
+          <div id="screen">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+          </div>
+          
+          <div id="left-side">
+            
+            <div data-number class="calc-items" id="seven"><button>7</button></div>
+            <div data-number class="calc-items" id="eight"><button>8</button></div>
+            <div data-number class="calc-items" id="nine"><button>9</button></div>
+            
+            <div data-number class="calc-items" id="four"><button>4</button></div>
+            <div data-number class="calc-items" id="five"><button>5</button></div>
+            <div data-number class="calc-items" id="six"><button>6</button></div>
+            
+            <div data-number class="calc-items" id="one"><button>1</button></div>
+            <div data-number class="calc-items" id="two"><button>2</button></div>
+            <div data-number class="calc-items" id="three"><button>3</button></div>
+            
+            <div data-all-clear class="calc-items" id="clear"><button>C</button></div>
+            <div data-number class="calc-items" id="zero"><button>0</button></div>
+            <div data-equals class="calc-items" id="equal"><button>=</button></div>
+          </div>
+          
+          <div id="right-side">
+            
+            <div data-operation class="right-calc-items" id="plus"><button>+</button></div>
+            <div data-operation class="right-calc-items" id="minus"><button>-</button></div>
+            <div data-operation class="right-calc-items" id="multiplication"><button>*</button></div>
+            <div data-operation class="right-calc-items" id="devision"><button>/</button></div>
+          </div>
+          
+        </div>
+        </div>
+
+      
+      
+      
+      <script src="myjs.js"></script>
+  </body>
+</html>
